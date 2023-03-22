@@ -4,7 +4,7 @@ def encoder(user_password): # Logic error in orginal function where it would not
     user_password[i] = str(int(user_password[i]) + 3)
   return ''.join(user_password) # Returns the encoded password
 
-def decode_password(encoded_password): #decoded password function
+def decode_password(encoded_password): #decoded password function by Andrew Griner
   decoded_password_str = ''
   for char in encoded_password:
     decoded_char = str((int(char) - 3) % 10) #Returns it to orginal password
